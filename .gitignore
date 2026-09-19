@@ -1,0 +1,16 @@
+.env
+
+viewpoint.yaml
+viewpoint-*.bmp
+
+server/bin/
+/viewpoint-server
+/viewpoint-server.exe
+
+dist/
+viewpoint-windows-amd64.zip
+
+client/target/
+client/Cargo.lock
+
+Thumbs.db

@@ -1,0 +1,48 @@
+# Viewpoint config | run: cp viewpoint.example.yaml viewpoint.yaml
+
+server:
+  # server host for the capture client to connect to
+  host: "127.0.0.1"
+  # server port for the capture client to connect to
+  port: 8080
+  
+  # url viewers use to watch (e.g. https://stream.myDomain.com)
+  # this example uses a dns which you can route to localhost:8080
+  # if you setup a reverse proxy and port forwarding (80 -> 443 and 443 -> 443))  
+  public_url: "http://localhost:8080"
+  # Local signaling endpoint used by the capture client
+  control_url: "http://127.0.0.1:8080"
+
+auth:
+  # link expiration (minutes override hours)
+  # override per link: POST /api/links {"ttl_hours": 1}
+  # or {"ttl_minutes": 10} (capped below)
+  link_ttl_hours: 24
+  link_ttl_minutes: 0
+  max_link_ttl_hours: 168
+
+webrtc:
+  stun_urls:
+    - "stun:stun.l.google.com:19302"
+  # to get direct p2p leave empty
+  # set turn_url and VIEWPOINT_TURN_SECRET for relay links
+  turn_url: ""
+  turn_username: "viewpoint"
+
+stream:
+  monitor: 1
+  width: 1920
+  height: 1080
+  fps: 30
+  bitrate_kbps: 6000
+  # vp8 is rejected by the client, so use h264 (its also the most supported codec)
+  codec: "h264"
+  # audio loopback required client to be built with --features audio
+  audio_enabled: true
+
+
+# environment secrets
+#
+# VIEWPOINT_CONFIG=/path/to/viewpoint.yaml  # override (viewpoint.yaml)
+# VIEWPOINT_JWT_SECRET=...                  # REQUIRED token to mint links (send as authorization: bearer)
+# VIEWPOINT_TURN_SECRET=...                 # TURN credential
