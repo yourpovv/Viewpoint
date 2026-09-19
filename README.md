@@ -17,7 +17,7 @@ Stream your full screen anyone, anywhere with a link. your PC to the viewer, the
 
 </div>
 
-https://github.com/user-attachments/assets/8f79f560-c709-462a-832f-89da42c829a5
+https://github.com/user-attachments/assets/e70980f0-9cca-4771-968d-c76ff414839e
 
 ## Usage
 
