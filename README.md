@@ -61,4 +61,4 @@ cargo build --release --manifest-path client/Cargo.toml --features audio
 
 ## License
 
-[MIT](LICENSE) c [YourPOVV](https://github.com/yourpovv)
+[MIT](LICENSE) © [YourPOVV](https://github.com/yourpovv)
