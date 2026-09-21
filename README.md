@@ -14,6 +14,7 @@ Stream your full screen anyone, anywhere with a link. your PC to the viewer, the
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6?logo=windows&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-CE422B?logo=rust&logoColor=white)
+[![GitHub](https://img.shields.io/github/stars/yourpovv/YT-Converter?style=social)](https://github.com/yourpovv/YT-Converter)
 
 </div>
 
